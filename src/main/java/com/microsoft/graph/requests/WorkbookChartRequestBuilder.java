@@ -174,7 +174,7 @@ public class WorkbookChartRequestBuilder extends BaseRequestBuilder<WorkbookChar
      */
     @Nonnull
     public WorkbookChartImageRequestBuilder image() {
-        return new WorkbookChartImageRequestBuilder(getRequestUrlWithAdditionalSegment("microsoft.graph.image"), getClient(), null);
+        return new WorkbookChartImageRequestBuilder(getRequestUrlWithAdditionalSegment("image"), getClient(), null);
     }
 
     /**
@@ -184,6 +184,6 @@ public class WorkbookChartRequestBuilder extends BaseRequestBuilder<WorkbookChar
      */
     @Nonnull
     public WorkbookChartImageRequestBuilder image(@Nonnull final WorkbookChartImageParameterSet parameters) {
-        return new WorkbookChartImageRequestBuilder(getRequestUrlWithAdditionalSegment("microsoft.graph.image"), getClient(), null, parameters);
+        return new WorkbookChartImageRequestBuilder(getRequestUrlWithAdditionalSegment("image"), getClient(), null, parameters);
     }
 }
