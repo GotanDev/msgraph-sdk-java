@@ -6,9 +6,9 @@
     -->
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.microsoft.graph</groupId>
+    <groupId>io.gotan.os</groupId>
     <artifactId>microsoft-graph</artifactId>
-    <version>3.3.1</version>
+    <version>3.3.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -50,4 +50,26 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+    <scm>
+        <connection>scm:git@github.com:GotanDev/msgraph-sdk-java.git</connection>
+        <url>scm:git@github.com:GotanDev/msgraph-sdk-java.git</url>
+        <developerConnection>scm:git:git@github.com:GotanDev/msgraph-sdk-java.git</developerConnection>
+    </scm>
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/GotanDev/msgraph-sdk-java/issues</url>
+    </issueManagement>
+    <distributionManagement>
+        <repository>
+            <id>io.gotan.repository</id>
+            <name>Gotan Libraries</name>
+            <url>https://repository.dev.gotan.io/repository/gotan.os/</url>
+        </repository>
+    </distributionManagement>
 </project>
