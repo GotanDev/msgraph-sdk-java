@@ -1,53 +1,69 @@
 <project>
-	<!-- 
-		This package file is a place holder to enable the dependency graph https://github.com/microsoftgraph/msgraph-sdk-java/network/dependencies
-		as the dependency graph is not compatible with gradle https://docs.github.com/en/free-pro-team@latest/github/visualizing-repository-data-with-graphs/about-the-dependency-graph#supported-package-ecosystems
-		build.gradle is the source of truth
-	-->
-	<modelVersion>4.0.0</modelVersion>
+    <!--
+        This package file is a place holder to enable the dependency graph https://github.com/microsoftgraph/msgraph-sdk-java/network/dependencies
+        as the dependency graph is not compatible with gradle https://docs.github.com/en/free-pro-team@latest/github/visualizing-repository-data-with-graphs/about-the-dependency-graph#supported-package-ecosystems
+        build.gradle is the source of truth
+    -->
+    <modelVersion>4.0.0</modelVersion>
 
-	<groupId>io.gotan.os</groupId>
-	<artifactId>microsoft-graph</artifactId>
-	<version>2.3.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+    <groupId>io.gotan.os</groupId>
+    <artifactId>microsoft-graph</artifactId>
+    <version>2.3.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
-	<dependencies>
-		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-			<version>20.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-			<version>2.8.6</version>
-		</dependency>
-		<dependency>
-			<groupId>com.squareup.okhttp3</groupId>
-			<artifactId>gson</artifactId>
-			<version>3.12.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.microsoft.graph</groupId>
-			<artifactId>microsoft-graph-core</artifactId>
-			<version>1.0.8</version>
-		</dependency>
-	</dependencies>
-
-	<scm>
-		<connection>scm:git@github.com:GotanDev/msgraph-sdk-java.git</connection>
-		<url>scm:git@github.com:GotanDev/msgraph-sdk-java.git</url>
-		<developerConnection>scm:git:git@github.com:GotanDev/msgraph-sdk-java.git</developerConnection>
-	</scm>
-	<issueManagement>
-		<system>GitHub</system>
-		<url>https://github.com/GotanDev/msgraph-sdk-java/issues</url>
-	</issueManagement>
-	<distributionManagement>
-		<repository>
-			<id>io.gotan.repository</id>
-			<name>Gotan Libraries</name>
-			<url>https://repository.dev.gotan.io/repository/gotan.os/</url>
-		</repository>
-	</distributionManagement>
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>20.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.14.9</version>
+        </dependency>
+        <dependency>
+            <groupId>com.microsoft.graph</groupId>
+            <artifactId>microsoft-graph-core</artifactId>
+            <version>1.0.8</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <showWarnings>true</showWarnings>
+                    <showDeprecation>true</showDeprecation>
+                    <compilerArgs>
+                        <compilerArg>-Xlint:all</compilerArg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <scm>
+        <connection>scm:git@github.com:GotanDev/msgraph-sdk-java.git</connection>
+        <url>scm:git@github.com:GotanDev/msgraph-sdk-java.git</url>
+        <developerConnection>scm:git:git@github.com:GotanDev/msgraph-sdk-java.git</developerConnection>
+    </scm>
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/GotanDev/msgraph-sdk-java/issues</url>
+    </issueManagement>
+    <distributionManagement>
+        <repository>
+            <id>io.gotan.repository</id>
+            <name>Gotan Libraries</name>
+            <url>https://repository.dev.gotan.io/repository/gotan.os/</url>
+        </repository>
+    </distributionManagement>
 </project>
