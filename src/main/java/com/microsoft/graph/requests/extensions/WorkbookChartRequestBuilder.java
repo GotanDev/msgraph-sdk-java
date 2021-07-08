@@ -140,18 +140,18 @@ public class WorkbookChartRequestBuilder extends BaseRequestBuilder implements I
     }
 
     public IWorkbookChartImageRequestBuilder image() {
-        return new WorkbookChartImageRequestBuilder(getRequestUrlWithAdditionalSegment("image"), getClient(), null);
+        return new WorkbookChartImageRequestBuilder(getRequestUrlWithAdditionalSegment("microsoft.graph.image"), getClient(), null);
     }
 
     public IWorkbookChartImageRequestBuilder image(final Integer width) {
-        return new WorkbookChartImageRequestBuilder(getRequestUrlWithAdditionalSegment("image"), getClient(), null, width);
+        return new WorkbookChartImageRequestBuilder(getRequestUrlWithAdditionalSegment("microsoft.graph.image"), getClient(), null, width);
     }
 
     public IWorkbookChartImageRequestBuilder image(final Integer width, final Integer height) {
-        return new WorkbookChartImageRequestBuilder(getRequestUrlWithAdditionalSegment("image"), getClient(), null, width, height);
+        return new WorkbookChartImageRequestBuilder(getRequestUrlWithAdditionalSegment("microsoft.graph.image"), getClient(), null, width, height);
     }
 
     public IWorkbookChartImageRequestBuilder image(final Integer width, final Integer height, final String fittingMode) {
-        return new WorkbookChartImageRequestBuilder(getRequestUrlWithAdditionalSegment("image"), getClient(), null, width, height, fittingMode);
+        return new WorkbookChartImageRequestBuilder(getRequestUrlWithAdditionalSegment("microsoft.graph.image"), getClient(), null, width, height, fittingMode);
     }
 }
